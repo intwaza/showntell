@@ -1,0 +1,80 @@
+
+  <!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+    </head>
+    <head>
+       <script src="idx.js"></script>
+      <!--inline styling-->
+       <style>
+          .title{
+          margin-bottom: 10px;
+          text-align:center;
+          width: 210px;
+          color:black;
+          border: solid black 2px;
+          margin-left: 300px;
+          }
+   
+          input[type="button"]
+          {
+          background-color:burlywood;
+          color: black;
+          border: solid black 2px;
+          width:100%
+          }
+   
+          input[type="text"]
+          {
+          background-color:white;
+          border: solid black 2px;
+          width:100%
+          }
+          table{
+              margin-left: 300px;
+              margin-top: 20px;
+              width: 300px;
+              height: 200px;
+          }
+       </style>
+    </head>
+    <!-- create table -->
+    <body>
+       <div class = title >Calculator</div>
+       <table>
+          <tr>
+             <td colspan="3"><input type="text" id="result"/></td>
+             <!-- clr() function will call clr to clear all value -->
+             <td><input type="button" value="c" onclick="clr()"/> </td>
+          </tr>
+          <tr>
+             <!-- create button and assign value to each button -->
+             <!-- dis("1") will call function on to display value -->
+             <td><input type="button" value="1" onclick="on('1')"/> </td>
+             <td><input type="button" value="2" onclick="on('2')"/> </td>
+             <td><input type="button" value="3" onclick="on('3')"/> </td>
+             <td><input type="button" value="/" onclick="on('/')"/> </td>
+          </tr>
+          <tr>
+             <td><input type="button" value="4" onclick="on('4')"/> </td>
+             <td><input type="button" value="5" onclick="on('5')"/> </td>
+             <td><input type="button" value="6" onclick="on('6')"/> </td>
+             <td><input type="button" value="-" onclick="on('-')"/> </td>
+          </tr>
+          <tr>
+             <td><input type="button" value="7" onclick="on('7')"/> </td>
+             <td><input type="button" value="8" onclick="on('8')"/> </td>
+             <td><input type="button" value="9" onclick="on('9')"/> </td>
+             <td><input type="button" value="+" onclick="on('+')"/> </td>
+          </tr>
+          <tr>
+             <td><input type="button" value="." onclick="on('.')"/> </td>
+             <td><input type="button" value="0" onclick="on('0')"/> </td>
+             <!-- solve function call function solve to evaluate value -->
+             <td><input type="button" value="=" onclick="solve()"/> </td>
+             <td><input type="button" value="*" onclick="on('*')"/> </td>
+          </tr>
+       </table>
+    </body>
+    
